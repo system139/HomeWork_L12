@@ -239,8 +239,8 @@ function Book(author, title, year, publisher) {
     this.publisher = publisher;
 }
 
-Book.prototype = myeBook; //не уверен
-
+//Book.prototype = myeBook;
+eBook.prototype = new Book();
 const myBook = new Book('Брэдбери Рэй Дуглас', '451 ГРАДУС ПО ФАРЕНГЕЙТУ', 1953, 'Азбука');
 console.log(myBook);
 
